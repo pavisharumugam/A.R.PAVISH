@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0%;
+    margin: 0;
+    background: white;
+}
+
+.main-logo{
+    width: 50px;
+    height: 50px;
+}
+
+/* -------------------- */
+/*     BASIC RESET      */
+/* -------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+:root {
+    /* COLORS */
+    --clr-dark: 230 35% 7%;
+    --clr-accent: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+    --gap: 3rem;
+  
+    /* FONT SIZES */
+    --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+    --fs-800: 3.5rem;
+    --fs-700: 1.5rem;
+    --fs-600: 1rem;
+    --fs-500: 1rem;
+    --fs-400: 0.9375rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+  
+    /* FONT-FAMILIES */
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
+  }
+  
+  /* Global Reset */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  /* Margin Reset */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  picture {
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-weight: 400;
+  }
+  
+  body {
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-accent));
+    min-height: 100vh;
+    line-height: 1.6;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    overflow-x: hidden;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAMFBMVEX////o5+38/Pzq6e74+Prn5uvz8/b6+vvv7vLz8vX49/rs6/D29vfq6u3n5+vw8PWoASwTAAABMklEQVR4nO3Y0WqEMBAF0E2MG111+/9/W20phXbcvjURzoFdfLxcEpnxdgMAAAAAAAAAAAAAAAAAAAAAAAD4X2VuneAy6pLG1hmuoowpDa1DXMXeVbq3DnER895Vah3iKra9q9w6xFWk56Srv9VSj//9V9aisBfydLyrhjnfHh9PaXi0jtStY1749P3w1jpUp2qKlNax+rRFXbmHoTXqyn4YW4KubDwnooNl44nlMSjL2z0WllVbp+pUjq7h2jpVr6KyptahejUEZY22w9gUHa2ldapOhUNpWpyt0DNsy00Mhfcwba1j9alGk5Yh/kR0tGyHJ6K51MJzpvzqyofSc/efg0PrQF072trmmvN6fN6y7byWy9eXhlxNWAAAAAAAAAAAAAAAAAAAAAAAAAAAQG/eAV2yBBKvZ+PpAAAAAElFTkSuQmCC");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    font-family: inherit;
+  }
+
+  nav.flex{
+    justify-content: space-between;
+  }
+
+  .flex{
+    display: flex;
+  }
+
+  .navigation.flex{
+    justify-content: space-evenly;
+    gap: 3.1 rem;
+    padding-left: 2rem;
+  }
+  
+  nav{
+    margin-top: 2rem;
+  }
+
+.navigation{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+    padding: 1rem 1rem 1rem 0rem;
+    color: hsl(var(--clr-accent));
+
+}
+
+.navigation > li > span{
+    font-weight: bold;
+    margin-inline: 0.5rem;
+}
+.navigation > li{
+    margin-inline: 0.5rem;
+}
+
+.heroText{
+    width: 60%;
+}
+
+.heroContainer{
+    justify-content: center;
+    align-items: center;
+    padding-left: 5rem;
+}
+
+.heroImage{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 100px;
+    object-fit: cover;
+    transform: scale(1.5);
+    justify-self: center;
+}
+
+
+
+a{
+text-decoration: none;
+}
